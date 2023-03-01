@@ -112,7 +112,7 @@ function pinoElasticSearch (opts) {
     node: opts.node,
     auth: opts.auth,
     cloud: opts.cloud,
-    ssl: { rejectUnauthorized: opts.rejectUnauthorized }
+    tls: { rejectUnauthorized: opts.rejectUnauthorized }
   }
 
   if (opts.Connection) {
